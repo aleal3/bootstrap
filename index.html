@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hércules: Aventura Gráfica Interactiva </title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -85,7 +87,7 @@
   </div>
 </section>
 
-  <section id="desarrollo" class="py-5 bg-light">
+  <section id="desarrollo" class="py-5">
     <div class="container">
     <div class="row mb-4">
       <div class="col-12">
@@ -127,7 +129,7 @@
                    alt="Pantalla 2" style="max-height:480px;">
             </div>
             <div class="carousel-item">
-              <img src="../tpfinalparte1/img/pantalla3.png" 
+              <img src="../tpfinalparte1/img/pantalla5.png" 
                    class="img-fluid mx-auto d-block border border-warning rounded shadow" 
                    alt="Pantalla 3" style="max-height:480px;">
             </div>
@@ -170,7 +172,7 @@
   </div>
 </section>
 
-<section id="equipo" class="bg-light py-5">
+<section id="equipo" class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">Integrantes del equipo</h2>
       <div class="row justify-content-center">
@@ -203,11 +205,104 @@
 
   <style>
     body {
-      background-color:  rgb(218, 155, 72);
+      body {
+    background-color: rgb(218, 155, 72); 
+    background-image: url("img/fondo.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    font-family: "Special Elite", system-ui;
+    color: #2c2c2c;
+  }
+
+  .navbar {
+   
+    letter-spacing: 1px;
+  } 
+
+  .navbar-brand {
+    font-weight: bold;
+    color: #f1c40f !important;
+  }
+
+  .nav-link {
+    transition: color 0.3s ease;
+  }
+  .nav-link:hover {
+    color: #f1c40f !important;
+  }
+
+  header#tematica {
+    background: linear-gradient(to bottom, #1c1c1c, #2c2c2c);
+    border-bottom: 4px solid #f1c40f;
+  }
+
+  header h1 { 
+    font-weight: bold;
+    color: #f1c40f;
+  }
+  
+  #proceso h2 {
+   
+    color: #1c1c1c;
+  }
+  #proceso .card {
+    border: 2px solid #f1c40f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  #proceso .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  }
+
+  #desarrollo{
+    background-color: antiquewhite;
+  }
+
+  #desarrollo h4 {
+    color: #1c1c1c;
+  }
+  .carousel-inner img {
+    border: 3px solid #f1c40f;
+  }
+
+  #juego h2 {  
+    color: #1c1c1c;
+  }
+  #juego iframe {
+    border: 4px solid #f1c40f;
+    border-radius: 8px;
+  }
+
+  #idea-juego {
+    background: #1c1c1c;
+    border-top: 4px solid #f1c40f;
+    border-bottom: 4px solid #f1c40f;
+  }
+  #idea-juego h2 {
+    color: #f1c40f;
+  }
+
+  #equipo{
+    background-color: antiquewhite;
+  }
+
+  #equipo h2 {
+    color: #1c1c1c;
+  }
+  #equipo .card {
+    border: 2px solid #f1c40f;
+    transition: transform 0.3s ease;
+  }
+  #equipo .card:hover {
+    transform: scale(1.05);
+  }
+
+  footer {
+    border-top: 4px solid #f1c40f;
+  }
     }
 
   </style>
 
 </body>
 </html>
-
